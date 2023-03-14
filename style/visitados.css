@@ -1,0 +1,50 @@
+.container_visitados {
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    padding: 0 10em 2em 10em;
+}
+
+.container_visitados_titulo {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 2em;
+    margin: 0.5em;
+}
+
+.container_visitados_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    
+}
+
+.container_visitados_link {
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 0.9em;
+    margin: 7px;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container_visitados_titulo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container_visitados_titulo {
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+
+    .container_visitados_ul {
+        padding: 2em 20em;
+    }
+}

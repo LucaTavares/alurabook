@@ -1,0 +1,131 @@
+:root {
+    --background-cinza: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja:  #EB9B00;
+}
+
+.header_principal {
+    background-color: var(--branco);
+    display: flex;
+    justify-content:space-between;
+    padding: 16px 24px 16px 0;
+    position: relative;
+}
+
+.header_div {
+    display: flex;
+    
+}
+
+.header_div_secundaria{
+    display: flex;
+    align-items: center;
+}
+
+.header_div_texto {
+    color: var(--preto);
+    margin-left: 0.5em;
+    display: none;
+}
+
+.menu_input {
+    display: none;
+}
+
+.menu_hamburguer {
+    height: 48px;
+    width: 48px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+}
+
+.menu_ul {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    display: none;
+}
+
+#menu_input:checked~.menu_ul {
+    display: block;
+}
+
+.menu_listas, .menu_listas_titulo {
+    color: black;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+} 
+
+.menu_listas_titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.header_principal_titulo {
+    color: var(--preto);
+    font-family: var(--font-desktop);
+    font-size: 30px;
+    margin-top: 0.5em;
+    display: none;
+}
+
+.header_principal_listas {
+    color: var(--preto);
+    display: none;
+    margin: 1.3em 0 0 2em;
+    gap: 1em;
+}
+.header_principal_lista {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#header_principal_listas_checkbox {
+   display: none;
+}
+
+
+@media screen and (min-width:1024px) {
+    .header_principal_titulo {
+        display: block;
+    }
+    
+    .menu_hamburguer {
+        display: none;
+    }
+
+    .header_principal_logo {
+        margin-left: 3em;
+    }
+    
+    .header_principal_listas {
+        display: flex;
+    }
+    .header_principal_favoritos {
+        display: none;
+    }
+
+    .header_div {
+        gap: 3em;
+    }
+
+    #header_principal_listas_checkbox:checked~.menu_ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .header_div_texto{
+        display: block;
+    }
+}
+
+
+
+
+
+

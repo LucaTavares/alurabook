@@ -1,0 +1,67 @@
+:root {
+    --background-cinza: #EBECEE;
+    --branco: #FFFFFF;
+    --degrade-azul: 
+    
+}
+
+.primeira_section {
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    opacity: 0.75;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.primeira_section_titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.primeira_section_texto {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.primeira_section_input {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 80vw;
+    background-color: transparent;
+    text-align: center;
+    padding: 1em;
+    padding-left: 60px;
+}
+
+.primeira_section_input::placeholder {
+    color: var(--branco);
+    background-image: url(../img/Lupa.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+@media screen and (min-width: 1024px) {
+    .primeira_section_titulo {
+        font-size: 36px;
+    }
+
+    .primeira_section_input {
+        width: 50%;
+    }
+    .primeira_section_input::placeholder {
+        background-position: 6em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .primeira_section {
+        padding: 5em 1em;
+    }
+
+    .primeira_section_input {
+        width: 40vw;
+    }
+    .primeira_section_texto_br {
+        display: none;
+    }
+}
